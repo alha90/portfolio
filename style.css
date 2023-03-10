@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  /* background-color: #01161e; */
+  background-color: #3a5a6c;
+}
+
+/* Here begins the Hamburger menu*/
+.hamburger {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 40px;
+  height: 30px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger > span {
+  width: 40px;
+  height: 3px;
+  z-index: 3;
+  background-color: #eff6e0;
+  border-radius: 20px;
+  transition: 0.4s ease-out;
+}
+.change.hamburger > span:nth-child(1) {
+  width: 40px;
+  transform: translateY(13px) rotate(-45deg);
+}
+.change.hamburger > span:nth-child(2) {
+  opacity: 0;
+}
+.change.hamburger > span:nth-child(3) {
+  width: 40px;
+  transform: translateY(-13px) rotate(45deg);
+}
+/* Here ends the hamburger menu */
+
+.nav {
+  /* width: 0; */
+  height: 100%;
+}
+.menu {
+  position: absolute;
+  right: 80px;
+  width: 0;
+  height: 80px;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s ease-out;
+}
+.menu a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.menu a:hover {
+  color: #01161e;
+}
+.open.menu {
+  width: 60%;
+}
+.content {
+  background-color: #e6e8e9;
+  padding: 6rem 0;
+}
+.content-box {
+  max-width: 82rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+.heading-primary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+}
+.description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+  color: #333;
+}
+.dev-img {
+  width: 100%;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin-right: 5px;
+  border-radius: 7px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #333;
+}
