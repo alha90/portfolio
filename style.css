@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 body {
   position: relative;
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", "Roboto", sans-serif;
 }
 
 header {
   width: 100%;
   height: 80px;
   /* background-color: #01161e; */
-  background-color: #3a5a6c;
+  background-color: #1c3f61;
 }
 
 /* Here begins the Hamburger menu*/
@@ -72,7 +72,7 @@ header {
   font-weight: 700;
 }
 .menu a:hover {
-  color: #01161e;
+  color: #dc9138;
 }
 .open.menu {
   width: 60%;
